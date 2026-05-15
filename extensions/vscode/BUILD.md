@@ -126,7 +126,7 @@ npm run package
 Este comando executa em sequência:
 1. `prepackage` — copia GUI, binários nativos (onnxruntime, sqlite3, lancedb, ripgrep) para os diretórios corretos
 2. `vscode:prepublish` (esbuild com minify) — gera `out/extension.js`
-3. `vsce package` — empacota tudo em `build/nice-code-1.3.39.vsix`
+3. `vsce package` — empacota tudo em `build/nice-code-1.3.40.vsix`
 
 O arquivo `.vsix` gerado fica em `extensions/vscode/build/`.
 
@@ -135,7 +135,7 @@ O arquivo `.vsix` gerado fica em `extensions/vscode/build/`.
 ## Passo 7 — Instalar a extensão no VS Code
 
 ```bash
-code --install-extension extensions/vscode/build/nice-code-1.3.39.vsix
+code --install-extension extensions/vscode/build/nice-code-1.3.40.vsix
 ```
 
 > **Atenção:** Se a extensão original `Continue.continue` estiver instalada, ela vai conflitar com `ibict.nice-code` pois ambas registram os mesmos IDs de views e comandos (`continue.continueGUIView`, etc.). Remova-a antes:
